@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ValSim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Tema escuro simples para aproximar o visual */
+        body {
+            background-color: #09090B; /* Cor de fundo escura */
+            color: #FAFAFA;           /* Cor do texto clara */
+        }
+        .card-custom {
+            background-color: #18181B; /* Cor do card */
+            border: 1px solid #27272A;
+            border-radius: 0.75rem; /* rounded-lg */
+        }
+        .card-custom:hover {
+            border-color: #FAFAFA;
+        }
+        .text-primary {
+            color: #FAFAFA;
+        }
+        .font-headline {
+             font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+    </style>
+</head>
+<body>
+    <div class="relative flex flex-col items-center justify-center min-h-screen bg-zinc-950 text-zinc-50 p-4">
+        <div class="absolute top-4 right-4">
+            <a href="/manage-saves" class="p-2 text-zinc-400 hover:text-zinc-50">
+                <i data-lucide="settings" class="h-6 w-6"></i>
+                <span class="sr-only">Manage Saves</span>
+            </a>
+        </div>
+        <header class="mb-12 text-center">
+            <h1 class="text-6xl md:text-7xl font-bold font-headline tracking-tighter text-primary">ValSim</h1>
+        </header>
+        <main class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full">
+            <!-- Card Quick Match -->
+            <a href="/quick_match" class="block transform hover:-translate-y-2 transition-transform duration-300 group">
+                <div class="card-custom h-full flex flex-col shadow-lg p-6 text-center items-center">
+                    <i data-lucide="dices" class="w-12 h-12 mb-4 text-primary"></i>
+                    <h2 class="text-2xl font-headline">Quick Match</h2>
+                    <p class="text-zinc-400 mt-2 flex-grow">Entre em um jogo rapidamente.</p>
+                </div>
+            </a>
+
+            <!-- Card Career Mode -->
+            <a href="/career-mode" class="block transform hover:-translate-y-2 transition-transform duration-300 group">
+                <div class="card-custom h-full flex flex-col shadow-lg p-6 text-center items-center">
+                    <i data-lucide="user" class="w-12 h-12 mb-4 text-primary"></i>
+                    <h2 class="text-2xl font-headline">Career Mode</h2>
+                    <p class="text-zinc-400 mt-2 flex-grow">Construa seu legado do zero.</p>
+                </div>
+            </a>
+
+            <!-- Card Tournament Mode -->
+            <a href="/tournament-mode" class="block transform hover:-translate-y-2 transition-transform duration-300 group">
+                <div class="card-custom h-full flex flex-col shadow-lg p-6 text-center items-center">
+                    <i data-lucide="trophy" class="w-12 h-12 mb-4 text-primary"></i>
+                    <h2 class="text-2xl font-headline">Tournament Mode</h2>
+                    <p class="text-zinc-400 mt-2 flex-grow">Dispute pelo campeonato.</p>
+                </div>
+            </a>
+        </main>
+    </div>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

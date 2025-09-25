@@ -1,0 +1,677 @@
+{
+    "sentinels": {
+      "id": "sentinels",
+      "name": "Sentinels",
+      "acronym": "SEN",
+      "region": "Americas",
+      "logo": "/static/images/logos/sentinels.png",
+      "players": [
+        { "name": "N4RRATE", "role": "Initiator", "nationality": "United States", "age": 23, "photo": "/images/player-faces/n4rrate.png" },
+        { "name": "zekken", "role": "Duelist", "nationality": "United States", "age": 19, "photo": "/images/player-faces/zekken.png" },
+        { "name": "johnqt", "role": "Sentinel", "nationality": "Morocco", "age": 26, "photo": "/images/player-faces/johnqt.png" },
+        { "name": "bang", "role": "Controller", "nationality": "United States", "age": 20, "photo": "/images/player-faces/bang.png" },
+        { "name": "Zellsis", "role": "Flex", "nationality": "United States", "age": 27, "photo": "/images/player-faces/zellsis.png" }
+      ]
+    },
+    "g2-esports": {
+      "id": "g2-esports",
+      "name": "G2 Esports",
+      "acronym": "G2",
+      "region": "Americas",
+      "logo": "/static/images/logos/g2-esports.png",
+      "players": [
+          { "name": "leaf", "role": "Sentinel", "nationality": "United States", "age": 22, "photo": "/images/player-faces/leaf.png" },
+          { "name": "trent", "role": "Initiator", "nationality": "United States", "age": 20, "photo": "/images/player-faces/trent.png" },
+          { "name": "jawgemo", "role": "Duelist", "nationality": "Cambodia", "age": 25, "photo": "/images/player-faces/jawgemo.png" },
+          { "name": "valyn", "role": "Controller", "nationality": "United States", "age": 22, "photo": "/images/player-faces/valyn.png" },
+          { "name": "JonahP", "role": "Flex", "nationality": "United States", "age": 25, "photo": "/images/player-faces/jonahp.png" }
+      ]
+    },
+    "cloud9": {
+        "id": "cloud9",
+        "name": "Cloud9",
+        "acronym": "C9",
+        "region": "Americas",
+        "logo": "/static/images/logos/cloud9.png",
+        "players": [
+            {"name": "oxy", "role": "Duelist", "nationality": "United States", "age": 20, "photo": "/images/player-faces/oxy.png"},
+            {"name": "v1c", "role": "Controller", "nationality": "United States", "age": 20, "photo": "/images/player-faces/v1c.png"},
+            {"name": "Xeppaa", "role": "Flex", "nationality": "United States", "age": 25, "photo": "/images/player-faces/xeppaa.png"},
+            {"name": "mitch", "role": "Initiator", "nationality": "United States", "age": 28, "photo": "/images/player-faces/mitch.png"},
+            {"name": "neT", "role": "Sentinel", "nationality": "South Korea", "age": 24, "photo": "/images/player-faces/net.png"}
+        ]
+    },
+    "evil-geniuses": {
+        "id": "evil-geniuses",
+        "name": "Evil Geniuses",
+        "acronym": "EG",
+        "region": "Americas",
+        "logo": "/static/images/logos/evil-geniuses.png",
+        "players": [
+            {"name": "NaturE", "role": "Initiator", "nationality": "United States", "age": 23, "photo": "/images/player-faces/nature.png"},
+            {"name": "Derrek", "role": "Sentinel", "nationality": "United States", "age": 24, "photo": "/images/player-faces/derrek.png"},
+            {"name": "yay", "role": "Flex", "nationality": "United States", "age": 27, "photo": "/images/player-faces/yay.png"},
+            {"name": "supamen", "role": "Controller", "nationality": "United States", "age": 28, "photo": "/images/player-faces/supamen.png"},
+            {"name": "icy", "role": "Duelist", "nationality": "United States", "age": 22, "photo": "/images/player-faces/icy.png"}
+        ]
+    },
+    "2game-esports": {
+        "id": "2game-esports",
+        "name": "2Game Esports",
+        "acronym": "2G",
+        "region": "Americas",
+        "logo": "/static/images/logos/2game-esports.png",
+        "logoBg": "blend",
+        "players": [
+            {"name": "silentzz", "role": "Duelist", "nationality": "Brazil", "age": 21, "photo": "/images/player-faces/silentzz.png"},
+            {"name": "gobera", "role": "Sentinel", "nationality": "Brazil", "age": 24, "photo": "/images/player-faces/gobera.png"},
+            {"name": "pryze", "role": "Initiator", "nationality": "Brazil", "age": 26, "photo": "/images/player-faces/pryze.png"},
+            {"name": "spike", "role": "Flex", "nationality": "Brazil", "age": 18, "photo": "/images/player-faces/spike.png"},
+            {"name": "lz", "role": "Controller", "nationality": "Brazil", "age": 21, "photo": "/images/player-faces/lz.png"}
+        ]
+    },
+    "furia": {
+        "id": "furia",
+        "name": "FURIA",
+        "acronym": "FUR",
+        "region": "Americas",
+        "logo": "/static/images/logos/furia.png",
+        "players": [
+            {"name": "heat", "role": "Sentinel", "nationality": "Brazil", "age": 22, "photo": "/images/player-faces/heat.png"},
+            {"name": "basic", "role": "Initiator", "nationality": "Brazil", "age": 19, "photo": "/images/player-faces/basic.png"},
+            {"name": "Urango", "role": "Flex", "nationality": "Brazil", "age": 20, "photo": "/images/player-faces/urango.png"},
+            {"name": "tuyz", "role": "Controller", "nationality": "Brazil", "age": 22, "photo": "/images/player-faces/tuyz.png"},
+            {"name": "palla", "role": "Duelist", "nationality": "Brazil", "age": 19, "photo": "/images/player-faces/palla.png"}
+        ]
+    },
+    "nrg": {
+        "id": "nrg",
+        "name": "NRG",
+        "acronym": "NRG",
+        "region": "Americas",
+        "logo": "/static/images/logos/nrg.png",
+        "players": [
+            {"name": "skuba", "role": "Sentinel", "nationality": "United States", "age": 22, "photo": "/images/player-faces/skuba.png"},
+            {"name": "brawk", "role": "Initiator", "nationality": "United States", "age": 25, "photo": "/images/player-faces/brawk.png"},
+            {"name": "Ethan", "role": "Flex", "nationality": "United States", "age": 25, "photo": "/images/player-faces/ethan.png"},
+            {"name": "mada", "role": "Duelist", "nationality": "Canada", "age": 21, "photo": "/images/player-faces/mada.png"},
+            {"name": "s0m", "role": "Controller", "nationality": "United States", "age": 23, "photo": "/images/player-faces/s0m.png"}
+        ]
+    },
+    "100-thieves": {
+        "id": "100-thieves",
+        "name": "100 Thieves",
+        "acronym": "100T",
+        "region": "Americas",
+        "logo": "/static/images/logos/100-thieves.png",
+        "players": [
+            {"name": "Asuna", "role": "Duelist", "nationality": "United States", "age": 22, "photo": "/images/player-faces/asuna.png"},
+            {"name": "Cryocells", "role": "Flex", "nationality": "United States", "age": 22, "photo": "/images/player-faces/cryocells.png"},
+            {"name": "eeiu", "role": "Initiator", "nationality": "Canada", "age": 24, "photo": "/images/player-faces/eeiu.png"},
+            {"name": "Kess", "role": "Sentinel", "nationality": "South Korea", "age": 23, "photo": "/images/player-faces/kess.png"},
+            {"name": "zander", "role": "Controller", "nationality": "United States", "age": 25, "photo": "/images/player-faces/zander.png"}
+        ]
+    },
+    "leviatan": {
+        "id": "leviatan",
+        "name": "Leviatán",
+        "acronym": "LEV",
+        "region": "Americas",
+        "logo": "/static/images/logos/leviatan.png",
+        "players": [
+            {"name": "Kingg", "role": "Controller", "nationality": "Chile", "age": 23, "photo": "/images/player-faces/kingg.png"},
+            {"name": "okeanos", "role": "Flex", "nationality": "Vietnam", "age": 21, "photo": "/images/player-faces/okeanos.png"},
+            {"name": "C0M", "role": "Initiator", "nationality": "United States", "age": 25, "photo": "/images/player-faces/c0m.png"},
+            {"name": "Sato", "role": "Duelist", "nationality": "Brazil", "age": 18, "photo": "/images/player-faces/sato.png"},
+            {"name": "tex", "role": "Sentinel", "nationality": "Germany", "age": 25, "photo": "/images/player-faces/tex.png"}
+        ]
+    },
+    "kru-esports": {
+        "id": "kru-esports",
+        "name": "KRÜ Esports",
+        "acronym": "KRU",
+        "region": "Americas",
+        "logo": "/static/images/logos/kru-esports.png",
+        "players": [
+            {"name": "Dantedeu5", "role": "Flex", "nationality": "Argentina", "age": 18, "photo": "/images/player-faces/dantedeu5.png"},
+            {"name": "Shyy", "role": "Sentinel", "nationality": "Chile", "age": 20, "photo": "/images/player-faces/shyy.png"},
+            {"name": "keznit", "role": "Duelist", "nationality": "Chile", "age": 24, "photo": "/images/player-faces/keznit.png"},
+            {"name": "Mazino", "role": "Initiator", "nationality": "Chile", "age": 24, "photo": "/images/player-faces/mazino.png"},
+            {"name": "Melser", "role": "Controller", "nationality": "Chile", "age": 30, "photo": "/images/player-faces/melser.png"}
+        ]
+    },
+    "loud": {
+        "id": "loud",
+        "name": "LOUD",
+        "acronym": "LOUD",
+        "region": "Americas",
+        "logo": "/static/images/logos/loud.png",
+        "players": [
+            {"name": "Lukxo", "role": "Sentinel", "nationality": "Brazil", "age": 18, "photo": "/images/player-faces/lukxo.png"},
+            {"name": "pANcada", "role": "Controller", "nationality": "Brazil", "age": 25, "photo": "/images/player-faces/pancada.png"},
+            {"name": "cauanzin", "role": "Flex", "nationality": "Brazil", "age": 20, "photo": "/images/player-faces/cauanzin.png"},
+            {"name": "Virtyy", "role": "Duelist", "nationality": "Brazil", "age": 20, "photo": "/images/player-faces/virtyy.png"},
+            {"name": "RobbieBk", "role": "Initiator", "nationality": "Netherlands", "age": 23, "photo": "/images/player-faces/robbiebk.png"}
+        ]
+    },
+    "mibr": {
+        "id": "mibr",
+        "name": "MIBR",
+        "acronym": "MIBR",
+        "region": "Americas",
+        "logo": "/static/images/logos/mibr.png",
+        "players": [
+            {"name": "aspas", "role": "Duelist", "nationality": "Brazil", "age": 22, "photo": "/images/player-faces/aspas.png"},
+            {"name": "cortezia", "role": "Sentinel", "nationality": "Brazil", "age": 20, "photo": "/images/player-faces/cortezia.png"},
+            {"name": "xenom", "role": "Controller", "nationality": "Brazil", "age": 21, "photo": "/images/player-faces/xenom.png"},
+            {"name": "artzin", "role": "Flex", "nationality": "Brazil", "age": 21, "photo": "/images/player-faces/artzin.png"},
+            {"name": "Verno", "role": "Initiator", "nationality": "Brazil", "age": 20, "photo": "/images/player-faces/verno.png"}
+        ]
+    },
+    "team-heretics": {
+        "id": "team-heretics",
+        "name": "Team Heretics",
+        "acronym": "TH",
+        "region": "EMEA",
+        "logo": "/static/images/logos/team-heretics-1.png",
+        "players": [
+            {"name": "Boo", "role": "Controller", "nationality": "Lithuania", "age": 27, "photo": "/images/player-faces/boo.png"},
+            {"name": "MiniBoo", "role": "Duelist", "nationality": "Lithuania", "age": 20, "photo": "/images/player-faces/miniboo.png"},
+            {"name": "Wo0t", "role": "Flex", "nationality": "Turkey", "age": 19, "photo": "/images/player-faces/wo0t.png"},
+            {"name": "RieNs", "role": "Initiator", "nationality": "Turkey", "age": 20, "photo": "/images/player-faces/riens.png"},
+            {"name": "benjyfishy", "role": "Sentinel", "nationality": "United Kingdom", "age": 21, "photo": "/images/player-faces/benjyfishy.png"}
+        ]
+    },
+    "giantx": {
+        "id": "giantx",
+        "name": "GiantX",
+        "acronym": "GX",
+        "region": "EMEA",
+        "logo": "/static/images/logos/giantx.png",
+        "players": [
+            {"name": "Flickless", "role": "Flex", "nationality": "Belgium", "age": 23, "photo": "/images/player-faces/flickless.png"},
+            {"name": "ara", "role": "Duelist", "nationality": "Romania", "age": 20, "photo": "/images/player-faces/ara.png"},
+            {"name": "Cloud", "role": "Initiator", "nationality": "Czech Republic", "age": 22, "photo": "/images/player-faces/cloud.png"},
+            {"name": "westside", "role": "Sentinel", "nationality": "Portugal", "age": 22, "photo": "/images/player-faces/westside.png"},
+            {"name": "GRUBINHO", "role": "Controller", "nationality": "Poland", "age": 21, "photo": "/images/player-faces/grubinho.png"}
+        ]
+    },
+    "bbl-esports": {
+        "id": "bbl-esports",
+        "name": "BBL Esports",
+        "acronym": "BBL",
+        "region": "EMEA",
+        "logo": "/static/images/logos/bbl-esports.png",
+        "players": [
+            {"name": "MAGNUM", "role": "Sentinel", "nationality": "Czech Republic", "age": 24, "photo": "/images/player-faces/magnum.png"},
+            {"name": "PROFEK", "role": "Controller", "nationality": "Poland", "age": 21, "photo": "/images/player-faces/profek.png"},
+            {"name": "LêwN", "role": "Duelist", "nationality": "Turkey", "age": 18, "photo": "/images/player-faces/lewn.png"},
+            {"name": "Jamppi", "role": "Flex", "nationality": "Finland", "age": 24, "photo": "/images/player-faces/jamppi.png"},
+            {"name": "sociablEE", "role": "Initiator", "nationality": "Turkey", "age": 29, "photo": "/images/player-faces/socialblee.png"}
+        ]
+    },
+    "team-vitality": {
+        "id": "team-vitality",
+        "name": "Team Vitality",
+        "acronym": "VIT",
+        "region": "EMEA",
+        "logo": "/static/images/logos/team-vitality.png",
+        "players": [
+            {"name": "UNFAKE", "role": "Initiator", "nationality": "Poland", "age": 28, "photo": "/images/player-faces/unfake.png"},
+            {"name": "Derke", "role": "Duelist", "nationality": "Finland, Russia", "age": 22, "photo": "/images/player-faces/derke.png"},
+            {"name": "Kicks", "role": "Controller", "nationality": "Estonia", "age": 19, "photo": "/images/player-faces/kicks.png"},
+            {"name": "Less", "role": "Sentinel", "nationality": "Brazil", "age": 20, "photo": "/images/player-faces/less.png"},
+            {"name": "KovaQ", "role": "Flex", "nationality": "Switzerland", "age": 21, "photo": "/images/player-faces/kovaq.png"}
+        ]
+    },
+    "fut-esports": {
+        "id": "fut-esports",
+        "name": "FUT Esports",
+        "acronym": "FUT",
+        "region": "EMEA",
+        "logo": "/static/images/logos/fut-esports.png",
+        "players": [
+            {"name": "qRaxs", "role": "Flex", "nationality": "Turkey", "age": 25, "photo": "/images/player-faces/qraxs.png"},
+            {"name": "cNed", "role": "Controller", "nationality": "Turkey", "age": 23, "photo": "/images/player-faces/cned.png"},
+            {"name": "MrFaliN", "role": "Initiator", "nationality": "Turkey", "age": 24, "photo": "/images/player-faces/mrfalin.png"},
+            {"name": "yetujey", "role": "Sentinel", "nationality": "Turkey", "age": 20, "photo": "/images/player-faces/yetujey.png"},
+            {"name": "xeus", "role": "Duelist", "nationality": "Turkey", "age": 23, "photo": "/images/player-faces/xeus.png"}
+        ]
+    },
+    "gentle-mates": {
+        "id": "gentle-mates",
+        "name": "Gentle Mates",
+        "acronym": "M8",
+        "region": "EMEA",
+        "logo": "/static/images/logos/gentle-mates.png",
+        "players": [
+            {"name": "kamyk", "role": "Flex", "nationality": "Poland", "age": 22, "photo": "/images/player-faces/kamyk.png"},
+            {"name": "Minny", "role": "Sentinel", "nationality": "Czech Republic", "age": 20, "photo": "/images/player-faces/minny.png"},
+            {"name": "ComeBack", "role": "Duelist", "nationality": "Turkey, Bulgaria", "age": 18, "photo": "/images/player-faces/comeback.png"},
+            {"name": "Proxh", "role": "Controller", "nationality": "Germany, Turkey", "age": 22, "photo": "/images/player-faces/proxh.png"},
+            {"name": "Veqaj", "role": "Initiator", "nationality": "Albania", "age": 20, "photo": "/images/player-faces/veqaj.png"}
+        ]
+    },
+    "team-liquid": {
+        "id": "team-liquid",
+        "name": "Team Liquid",
+        "acronym": "TL",
+        "region": "EMEA",
+        "logo": "/static/images/logos/team-liquid.png",
+        "players": [
+            {"name": "keiko", "role": "Controller", "nationality": "British", "age": 21, "photo": "/images/player-faces/keiko.png"},
+            {"name": "paTiTek", "role": "Flex", "nationality": "Poland", "age": 26, "photo": "/images/player-faces/patitek.png"},
+            {"name": "Trexx", "role": "Initiator", "nationality": "Russia", "age": 21, "photo": "/images/player-faces/trexx.png"},
+            {"name": "kamo", "role": "Duelist", "nationality": "Poland", "age": 20, "photo": "/images/player-faces/kamo.png"},
+            {"name": "nAts", "role": "Sentinel", "nationality": "Russia", "age": 23, "photo": "/images/player-faces/nats.png"}
+        ]
+    },
+    "fnatic": {
+        "id": "fnatic",
+        "name": "Fnatic",
+        "acronym": "FNC",
+        "region": "EMEA",
+        "logo": "/static/images/logos/fnatic.png",
+        "players": [
+            {"name": "Chronicle", "role": "Flex", "nationality": "Russia", "age": 23, "photo": "/images/player-faces/chronicle.png"},
+            {"name": "crashies", "role": "Initiator", "nationality": "United States", "age": 27, "photo": "/images/player-faces/crashies.png"},
+            {"name": "Alfajer", "role": "Sentinel", "nationality": "Turkey", "age": 20, "photo": "/images/player-faces/alfajer.png"},
+            {"name": "kaajak", "role": "Duelist", "nationality": "Poland", "age": 21, "photo": "/images/player-faces/kaajak.png"},
+            {"name": "Boaster", "role": "Controller", "nationality": "United Kingdom", "age": 30, "photo": "/images/player-faces/boaster.png"}
+        ]
+    },
+    "natus-vincere": {
+        "id": "natus-vincere",
+        "name": "Natus Vincere",
+        "acronym": "NAVI",
+        "region": "EMEA",
+        "logo": "/static/images/logos/natus-vincere.png",
+        "players": [
+            {"name": "Shao", "role": "Flex", "nationality": "Russia", "age": 25, "photo": "/images/player-faces/shao.png"},
+            {"name": "Ruxic", "role": "Controller", "nationality": "Turkey", "age": 21, "photo": "/images/player-faces/ruxic.png"},
+            {"name": "alexiiik", "role": "Duelist", "nationality": "Czech", "age": 19, "photo": "/images/player-faces/alexiiik.png"},
+            {"name": "hiro", "role": "Sentinel", "nationality": "Russia", "age": 20, "photo": "/images/player-faces/hiro.png"},
+            {"name": "ANGE1", "role": "Initiator", "nationality": "Ukraine", "age": 36, "photo": "/images/player-faces/ange1.png"}
+        ]
+    },
+    "karmine-corp": {
+        "id": "karmine-corp",
+        "name": "Karmine Corp",
+        "acronym": "KC",
+        "region": "EMEA",
+        "logo": "/static/images/logos/karmine-corp.png",
+        "players": [
+            {"name": "suygetsu", "role": "Controller", "nationality": "Russia", "age": 23, "photo": "/images/player-faces/suygetsu.png"},
+            {"name": "marteen", "role": "Duelist", "nationality": "Czech Republic", "age": 23, "photo": "/images/player-faces/marteen.png"},
+            {"name": "pyrolll", "role": "Initiator", "nationality": "France", "age": 19, "photo": "/images/player-faces/pyrolll.png"},
+            {"name": "Avez", "role": "Flex", "nationality": "Finland", "age": 22, "photo": "/images/player-faces/avez.png"},
+            {"name": "saadhak", "role": "Sentinel", "nationality": "Brazil", "age": 28, "photo": "/images/player-faces/saadhak.png"}
+        ]
+    },
+    "movistar-koi": {
+        "id": "movistar-koi",
+        "name": "Movistar KOI",
+        "acronym": "KOI",
+        "region": "EMEA",
+        "logo": "/static/images/logos/movistar-koi.png",
+        "logoBg": "blend",
+        "players": [
+            {"name": "baddyG", "role": "Controller", "nationality": "Poland", "age": 23, "photo": "/images/player-faces/baddyg.png"},
+            {"name": "MONSTEERR", "role": "Sentinel", "nationality": "Bulgaria", "age": 22, "photo": "/images/player-faces/monsteerr.png"},
+            {"name": "flyuh", "role": "Initiator", "nationality": "United States", "age": 23, "photo": "/images/player-faces/flyuh.png"},
+            {"name": "Filu", "role": "Flex", "nationality": "Poland", "age": 20, "photo": "/images/player-faces/filu.png"},
+            {"name": "nataNk", "role": "Duelist", "nationality": "Poland", "age": 24, "photo": "/images/player-faces/natank.png"}
+        ]
+    },
+    "apeks": {
+        "id": "apeks",
+        "name": "Apeks",
+        "acronym": "APK",
+        "region": "EMEA",
+        "logo": "/static/images/logos/apeks.png",
+        "players": [
+            {"name": "OLIZERA", "role": "Sentinel", "nationality": "Brazil", "age": 20, "photo": "/images/player-faces/olizera.png"},
+            {"name": "penny", "role": "Duelist", "nationality": "United States", "age": 25, "photo": "/images/player-faces/penny.png"},
+            {"name": "MOLSI", "role": "Initiator", "nationality": "Poland", "age": 24, "photo": "/images/player-faces/molsi.png"},
+            {"name": "AvovA", "role": "Controller", "nationality": "Denmark", "age": 26, "photo": "/images/player-faces/avova.png"},
+            {"name": "batujnax", "role": "Flex", "nationality": "Turkey", "age": 20, "photo": "/images/player-faces/batujnax.png"}
+        ]
+    },
+    "drx": {
+        "id": "drx",
+        "name": "DRX",
+        "acronym": "DRX",
+        "region": "Pacific",
+        "logo": "/static/images/logos/drx.png",
+        "logoBg": "blend",
+        "players": [
+            {"name": "HYUNMIN", "role": "Duelist", "nationality": "South Korea", "age": 20, "photo": "/images/player-faces/hyunmin.png"},
+            {"name": "free1ing", "role": "Flex", "nationality": "South Korea", "age": 24, "photo": "/images/player-faces/free1ng.png"},
+            {"name": "Flashback", "role": "Sentinel", "nationality": "South Korea", "age": 19, "photo": "/images/player-faces/flashback.png"},
+            {"name": "BeYN", "role": "Initiator", "nationality": "South Korea", "age": 26, "photo": "/images/player-faces/beyn.png"},
+            {"name": "MaKo", "role": "Controller", "nationality": "South Korea", "age": 23, "photo": "/images/player-faces/mako.png"}
+        ]
+    },
+    "rex-regum-qeon": {
+        "id": "rex-regum-qeon",
+        "name": "Rex Regum Qeon",
+        "acronym": "RRQ",
+        "region": "Pacific",
+        "logo": "/static/images/logos/rex-regum-qeon.png",
+        "players": [
+            {"name": "xffero", "role": "Sentinel", "nationality": "Indonesia", "age": 23, "photo": "/images/player-faces/xffero.png"},
+            {"name": "Monyet", "role": "Flex", "nationality": "Indonesia", "age": 20, "photo": "/images/player-faces/monyet.png"},
+            {"name": "crazyguy", "role": "Controller", "nationality": "Vietnam", "age": 29, "photo": "/images/player-faces/crazyguy.png"},
+            {"name": "Jemkin", "role": "Duelist", "nationality": "Russia", "age": 23, "photo": "/images/player-faces/jemkin.png"},
+            {"name": "Kushy", "role": "Initiator", "nationality": "Indonesia", "age": 21, "photo": "/images/player-faces/kushy.png"}
+        ]
+    },
+    "nongshim-redforce": {
+        "id": "nongshim-redforce",
+        "name": "Nongshim RedForce",
+        "acronym": "NS",
+        "region": "Pacific",
+        "logo": "/static/images/logos/nongshim-redforce.png",
+        "players": [
+            {"name": "Francis", "role": "Flex", "nationality": "South Korea", "age": 19, "photo": "/images/player-faces/francis.png"},
+            {"name": "Ivy", "role": "Sentinel", "nationality": "South Korea", "age": 21, "photo": "/images/player-faces/ivy.png"},
+            {"name": "Persia", "role": "Controller", "nationality": "South Korea", "age": 22, "photo": "/images/player-faces/persia.png"},
+            {"name": "Dambi", "role": "Duelist", "nationality": "South Korea", "age": 19, "photo": "/images/player-faces/dambi.png"},
+            {"name": "Rb", "role": "Initiator", "nationality": "South Korea", "age": 24, "photo": "/images/player-faces/rb.png"}
+        ]
+    },
+    "gen-g": {
+        "id": "gen-g",
+        "name": "Gen.G",
+        "acronym": "GENG",
+        "region": "Pacific",
+        "logo": "/static/images/logos/gen-g.png",
+        "players": [
+            {"name": "Karon", "role": "Controller", "nationality": "South Korea", "age": 23, "photo": "/images/player-faces/karon.png"},
+            {"name": "t3xture", "role": "Duelist", "nationality": "South Korea", "age": 26, "photo": "/images/player-faces/t3xture.png"},
+            {"name": "Munchkin", "role": "Flex", "nationality": "South Korea", "age": 27, "photo": "/images/player-faces/munchkin.png"},
+            {"name": "Ash", "role": "Initiator", "nationality": "South Korea", "age": 27, "photo": "/images/player-faces/ash.png"},
+            {"name": "Foxy9", "role": "Sentinel", "nationality": "South Korea", "age": 20, "photo": "/images/player-faces/foxy9.png"}
+        ]
+    },
+    "team-secret": {
+        "id": "team-secret",
+        "name": "Team Secret",
+        "acronym": "TS",
+        "region": "Pacific",
+        "logo": "/static/images/logos/team-secret.png",
+        "players": [
+            {"name": "invy", "role": "Flex", "nationality": "Philippines", "age": 23, "photo": "/images/player-faces/invy.png"},
+            {"name": "kellyS", "role": "Sentinel", "nationality": "Philippines", "age": 20, "photo": "/images/player-faces/kellys.png"},
+            {"name": "n1zzyyy", "role": "Duelist", "nationality": "Philippines", "age": 20, "photo": "/images/player-faces/n1zzyyy.png"},
+            {"name": "JessieVash", "role": "Initiator", "nationality": "Philippines", "age": 35, "photo": "/images/player-faces/jessievash.png"},
+            {"name": "Wild0reoo", "role": "Controller", "nationality": "Philippines", "age": 20, "photo": "/images/player-faces/wild0reoo.png"}
+        ]
+    },
+    "global-esports": {
+        "id": "global-esports",
+        "name": "Global Esports",
+        "acronym": "GE",
+        "region": "Pacific",
+        "logo": "/static/images/logos/global-esports.png",
+        "players": [
+            {"name": "Papi", "role": "Controller", "nationality": "Australia", "age": 22, "photo": "/images/player-faces/papi.png"},
+            {"name": "UdoTan", "role": "Duelist", "nationality": "Japan", "age": 20, "photo": "/images/player-faces/udotan.png"},
+            {"name": "Kr1stal", "role": "Initiator", "nationality": "India", "age": 22, "photo": "/images/player-faces/kr1stal.png"},
+            {"name": "ban", "role": "Flex", "nationality": "United States", "age": 24, "photo": "/images/player-faces/ban.png"},
+            {"name": "yoman", "role": "Sentinel", "nationality": "Japan", "age": 21, "photo": "/images/player-faces/yoman.png"}
+        ]
+    },
+    "paper-rex": {
+        "id": "paper-rex",
+        "name": "Paper Rex",
+        "acronym": "PRX",
+        "region": "Pacific",
+        "logo": "/static/images/logos/paper-rex.png",
+        "players": [
+            {"name": "f0rsakeN", "role": "Flex", "nationality": "Indonesia", "age": 21, "photo": "/images/player-faces/f0rsaken.png"},
+            {"name": "d4v4i", "role": "Sentinel", "nationality": "Malaysia", "age": 27, "photo": "/images/player-faces/d4v41.png"},
+            {"name": "something", "role": "Duelist", "nationality": "Russia", "age": 22, "photo": "/images/player-faces/something.png"},
+            {"name": "Jingg", "role": "Controller", "nationality": "Singapore", "age": 22, "photo": "/images/player-faces/jinggg.png"},
+            {"name": "PatMen", "role": "Initiator", "nationality": "Thailand", "age": 20, "photo": "/images/player-faces/patmen.png"}
+        ]
+    },
+    "talon": {
+        "id": "talon",
+        "name": "Talon",
+        "acronym": "TLN",
+        "region": "Pacific",
+        "logo": "/static/images/logos/talon.png",
+        "players": [
+            {"name": "JitBoyS", "role": "Sentinel", "nationality": "Thailand", "age": 25, "photo": "/images/player-faces/jitboys.png"},
+            {"name": "thyy", "role": "Controller", "nationality": "Brazil", "age": 23, "photo": "/images/player-faces/thyy.png"},
+            {"name": "Killua", "role": "Initiator", "nationality": "Indonesia", "age": 20, "photo": "/images/player-faces/killua.png"},
+            {"name": "primmie", "role": "Duelist", "nationality": "Thailand", "age": 20, "photo": "/images/player-faces/primmie.png"},
+            {"name": "Crws", "role": "Flex", "nationality": "Thailand", "age": 29, "photo": "/images/player-faces/crws.png"}
+        ]
+    },
+    "t1": {
+        "id": "t1",
+        "name": "T1",
+        "acronym": "T1",
+        "region": "Pacific",
+        "logo": "/static/images/logos/t1.png",
+        "players": [
+            {"name": "DH", "role": "Controller", "nationality": "South Korea", "age": 19, "photo": "/images/player-faces/dh.png"},
+            {"name": "Meteor", "role": "Sentinel", "nationality": "South Korea", "age": 24, "photo": "/images/player-faces/meteor.png"},
+            {"name": "iZu", "role": "Duelist", "nationality": "Japan", "age": 23, "photo": "/images/player-faces/izu.png"},
+            {"name": "Buzz", "role": "Flex", "nationality": "South Korea", "age": 22, "photo": "/images/player-faces/buzz.png"},
+            {"name": "stax", "role": "Initiator", "nationality": "South Korea", "age": 25, "photo": "/images/player-faces/stax.png"}
+        ]
+    },
+    "detonation-focusme": {
+        "id": "detonation-focusme",
+        "name": "DetonatioN FocusMe",
+        "acronym": "DFM",
+        "region": "Pacific",
+        "logo": "/static/images/logos/detonation-focusme.png",
+        "players": [
+            {"name": "Meiy", "role": "Duelist", "nationality": "Japan", "age": 22, "photo": "/images/player-faces/meiy.png"},
+            {"name": "Akame", "role": "Controller", "nationality": "Vietnam", "age": 24, "photo": "/images/player-faces/akame.png"},
+            {"name": "Jinboong", "role": "Sentinel", "nationality": "South Korea", "age": 21, "photo": "/images/player-faces/jinboong.png"},
+            {"name": "gyen", "role": "Flex", "nationality": "South Korea", "age": 21, "photo": "/images/player-faces/gyen.png"},
+            {"name": "SSees", "role": "Initiator", "nationality": "South Korea", "age": 20, "photo": "/images/player-faces/ssees.png"}
+        ]
+    },
+    "zeta-division": {
+        "id": "zeta-division",
+        "name": "ZETA DIVISION",
+        "acronym": "ZETA",
+        "region": "Pacific",
+        "logo": "/static/images/logos/zeta-division.png",
+        "players": [
+            {"name": "Xdll", "role": "Initiator", "nationality": "Japan", "age": 20, "photo": "/images/player-faces/xdll.png"},
+            {"name": "TenTen", "role": "Duelist", "nationality": "Japan", "age": 18, "photo": "/images/player-faces/tenten.png"},
+            {"name": "SugarZ3ro", "role": "Controller", "nationality": "Japan", "age": 22, "photo": "/images/player-faces/sugarz3ro.png"},
+            {"name": "Dep", "role": "Flex", "nationality": "Japan", "age": 24, "photo": "/images/player-faces/dep.png"},
+            {"name": "CLZ", "role": "Sentinel", "nationality": "Japan", "age": 23, "photo": "/images/player-faces/clz.png"}
+        ]
+    },
+    "boom-esports": {
+        "id": "boom-esports",
+        "name": "BOOM Esports",
+        "acronym": "BME",
+        "region": "Pacific",
+        "logo": "/static/images/logos/boom-esports.png",
+        "players": [
+            {"name": "dos9", "role": "Controller", "nationality": "Kazakhstan", "age": 21, "photo": "/images/player-faces/dos9.png"},
+            {"name": "Famouz", "role": "Duelist", "nationality": "Indonesia", "age": 27, "photo": "/images/player-faces/famouz.png"},
+            {"name": "Shiro", "role": "Flex", "nationality": "Indonesia", "age": 20, "photo": "/images/player-faces/shiro.png"},
+            {"name": "NcSlasher", "role": "Initiator", "nationality": "Indonesia", "age": 24, "photo": "/images/player-faces/ncslasher.png"},
+            {"name": "BerserX", "role": "Sentinel", "nationality": "Indonesia", "age": 22, "photo": "/images/player-faces/berserx.png"}
+        ]
+    },
+    "bilibili-gaming": {
+        "id": "bilibili-gaming",
+        "name": "Bilibili Gaming",
+        "acronym": "BLG",
+        "region": "China",
+        "logo": "/static/images/logos/bilibili-gaming.png",
+        "players": [
+            {"name": "nephh", "role": "Flex", "nationality": "Japan", "age": 21, "photo": "/images/player-faces/nephh.png"},
+            {"name": "rushia", "role": "Controller", "nationality": "China", "age": 22, "photo": "/images/player-faces/rushia.png"},
+            {"name": "whzy", "role": "Duelist", "nationality": "China", "age": 28, "photo": "/images/player-faces/whzy.png"},
+            {"name": "Knight", "role": "Initiator", "nationality": "China", "age": 23, "photo": "/images/player-faces/knight.png"},
+            {"name": "Levius", "role": "Sentinel", "nationality": "China", "age": 22, "photo": "/images/player-faces/levius.png"}
+        ]
+    },
+    "edward-gaming": {
+        "id": "edward-gaming",
+        "name": "Edward Gaming",
+        "acronym": "EDG",
+        "region": "China",
+        "logo": "/static/images/logos/edward-gaming.png",
+        "players": [
+            {"name": "Smoggy", "role": "Controller", "nationality": "China", "age": 20, "photo": "/images/player-faces/smoggy.png"},
+            {"name": "CHICHOO", "role": "Sentinel", "nationality": "China", "age": 21, "photo": "/images/player-faces/chichoo.png"},
+            {"name": "nobody", "role": "Initiator", "nationality": "China", "age": 21, "photo": "/images/player-faces/nobody.png"},
+            {"name": "Jieni7", "role": "Flex", "nationality": "China", "age": 29, "photo": "/images/player-faces/jieni7.png"},
+            {"name": "ZmjjKK", "role": "Duelist", "nationality": "China", "age": 23, "photo": "/images/player-faces/zmjjkk.png"}
+        ]
+    },
+    "tyloo": {
+        "id": "tyloo",
+        "name": "Tyloo",
+        "acronym": "TYL",
+        "region": "China",
+        "logo": "/static/images/logos/tyloo.png",
+        "players": [
+            {"name": "slowly", "role": "Duelist", "nationality": "China", "age": 32, "photo": "/images/player-faces/slowly.png"},
+            {"name": "Ninebody", "role": "Sentinel", "nationality": "China", "age": 21, "photo": "/images/player-faces/ninebody.png"},
+            {"name": "Scales", "role": "Flex", "nationality": "China", "age": 36, "photo": "/images/player-faces/scales.png"},
+            {"name": "Yoyo", "role": "Controller", "nationality": "China", "age": 27, "photo": "/images/player-faces/yoyo.png"},
+            {"name": "sword9", "role": "Initiator", "nationality": "China", "age": 28, "photo": "/images/player-faces/sword9.png"}
+        ]
+    },
+    "trace-esports": {
+        "id": "trace-esports",
+        "name": "Trace Esports",
+        "acronym": "TE",
+        "region": "China",
+        "logo": "/static/images/logos/trace-esports.png",
+        "players": [
+            {"name": "MarT1n", "role": "Sentinel", "nationality": "China", "age": 32, "photo": "/images/player-faces/mart1n.png"},
+            {"name": "Kai", "role": "Duelist", "nationality": "China", "age": 27, "photo": "/images/player-faces/kai.png"},
+            {"name": "Biank", "role": "Initiator", "nationality": "China", "age": 24, "photo": "/images/player-faces/biank.png"},
+            {"name": "FengF", "role": "Flex", "nationality": "China", "age": 21, "photo": "/images/player-faces/fengf.png"},
+            {"name": "LuoK1ng", "role": "Controller", "nationality": "China", "age": 31, "photo": "/images/player-faces/luok1ng.png"}
+        ]
+    },
+    "jdg-esports": {
+        "id": "jdg-esports",
+        "name": "JDG Esports",
+        "acronym": "JDG",
+        "region": "China",
+        "logo": "/static/images/logos/jdg-esports.png",
+        "players": [
+            {"name": "stew", "role": "Duelist", "nationality": "China", "age": 36, "photo": "/images/player-faces/stew.png"},
+            {"name": "Babyblue", "role": "Initiator", "nationality": "China", "age": 29, "photo": "/images/player-faces/babyblue.png"},
+            {"name": "jkuro", "role": "Controller", "nationality": "China", "age": 22, "photo": "/images/player-faces/jkuro.png"},
+            {"name": "Z1yan", "role": "Flex", "nationality": "China", "age": 36, "photo": "/images/player-faces/z1yan.png"},
+            {"name": "kklin", "role": "Sentinel", "nationality": "China", "age": 28, "photo": "/images/player-faces/kklin.png"}
+        ]
+    },
+    "titan-esports-club": {
+        "id": "titan-esports-club",
+        "name": "Titan Esports Club",
+        "acronym": "TEC",
+        "region": "China",
+        "logo": "/static/images/logos/titan-esports-club.png",
+        "players": [
+            {"name": "Coco", "role": "Flex", "nationality": "Philippines", "age": 22, "photo": "/images/player-faces/coco.png"},
+            {"name": "Tvirusluke", "role": "Duelist", "nationality": "China", "age": 24, "photo": "/images/player-faces/tvirusluke.png"},
+            {"name": "Haodong", "role": "Controller", "nationality": "China", "age": 33, "photo": "/images/player-faces/haodong.png"},
+            {"name": "Abo", "role": "Sentinel", "nationality": "China", "age": 21, "photo": "/images/player-faces/abo.png"},
+            {"name": "lucas", "role": "Initiator", "nationality": "China", "age": 28, "photo": "/images/player-faces/lucas.png"}
+        ]
+    },
+    "xi-lai-gaming": {
+        "id": "xi-lai-gaming",
+        "name": "Xi Lai Gaming",
+        "acronym": "XLG",
+        "region": "China",
+        "logo": "/static/images/logos/xi-lai-gaming.png",
+        "players": [
+            {"name": "NoMan", "role": "Flex", "nationality": "China", "age": 33, "photo": "/images/player-faces/noman.png"},
+            {"name": "happywei", "role": "Sentinel", "nationality": "China", "age": 29, "photo": "/images/player-faces/happywei.png"},
+            {"name": "Viva", "role": "Initiator", "nationality": "China", "age": 29, "photo": "/images/player-faces/viva.png"},
+            {"name": "Rarga", "role": "Duelist", "nationality": "China", "age": 34, "photo": "/images/player-faces/rarga.png"},
+            {"name": "coconut", "role": "Controller", "nationality": "Hong Kong", "age": 22, "photo": "/images/player-faces/coconut.png"}
+        ]
+    },
+    "all-gamers": {
+        "id": "all-gamers",
+        "name": "All Gamers",
+        "acronym": "AG",
+        "region": "China",
+        "logo": "/static/images/logos/all-gamers.png",
+        "players": [
+            {"name": "K1ra", "role": "Controller", "nationality": "China", "age": 26, "photo": "/images/player-faces/k1ra.png"},
+            {"name": "Shr1mp", "role": "Initiator", "nationality": "China", "age": 26, "photo": "/images/player-faces/shr1mp.png"},
+            {"name": "HanChe", "role": "Sentinel", "nationality": "China", "age": 28, "photo": "/images/player-faces/hanche.png"},
+            {"name": "Spitfires", "role": "Duelist", "nationality": "China", "age": 28, "photo": "/images/player-faces/spitfires.png"},
+            {"name": "deLb", "role": "Flex", "nationality": "China", "age": 36, "photo": "/images/player-faces/delb.png"}
+        ]
+    },
+    "dragon-ranger-gaming": {
+        "id": "dragon-ranger-gaming",
+        "name": "Dragon Ranger Gaming",
+        "acronym": "DRG",
+        "region": "China",
+        "logo": "/static/images/logos/dragon-ranger-gaming.png",
+        "players": [
+            {"name": "vo0kashu", "role": "Sentinel", "nationality": "Russia", "age": 32, "photo": "/images/player-faces/vo0kashu.png"},
+            {"name": "Flex1n", "role": "Controller", "nationality": "China", "age": 24, "photo": "/images/player-faces/flex1n.png"},
+            {"name": "SpiritZ1", "role": "Duelist", "nationality": "China", "age": 33, "photo": "/images/player-faces/spiritz1.png"},
+            {"name": "Nicc", "role": "Initiator", "nationality": "China", "age": 35, "photo": "/images/player-faces/nicc.png"},
+            {"name": "Akeman", "role": "Flex", "nationality": "China", "age": 27, "photo": "/images/player-faces/akeman.png"}
+        ]
+    },
+    "funplus-phoenix": {
+        "id": "funplus-phoenix",
+        "name": "FunPlus Phoenix",
+        "acronym": "FPX",
+        "region": "China",
+        "logo": "/static/images/logos/funplus-phoenix.png",
+        "players": [
+            {"name": "Life", "role": "Duelist", "nationality": "South Korea", "age": 30, "photo": "/images/player-faces/life.png"},
+            {"name": "BerLin", "role": "Controller", "nationality": "China", "age": 28, "photo": "/images/player-faces/berlin.png"},
+            {"name": "Autumn", "role": "Flex", "nationality": "China", "age": 31, "photo": "/images/player-faces/autumn.png"},
+            {"name": "yosemite", "role": "Sentinel", "nationality": "China", "age": 24, "photo": "/images/player-faces/yosemite.png"},
+            {"name": "AAAY", "role": "Initiator", "nationality": "China", "age": 41, "photo": "/images/player-faces/aaaaay.png"}
+        ]
+    },
+    "nova-esports": {
+        "id": "nova-esports",
+        "name": "Nova Esports",
+        "acronym": "NOVA",
+        "region": "China",
+        "logo": "/static/images/logos/nova-esports.png",
+        "players": [
+            {"name": "CB", "role": "Initiator", "nationality": "China", "age": 28, "photo": "/images/player-faces/cb.png"},
+            {"name": "Ezeir", "role": "Controller", "nationality": "China", "age": 29, "photo": "/images/player-faces/ezeir.png"},
+            {"name": "GuanG", "role": "Sentinel", "nationality": "China", "age": 21, "photo": "/images/player-faces/guang.png"},
+            {"name": "SWERL", "role": "Duelist", "nationality": "Australia", "age": 27, "photo": "/images/player-faces/swerl.png"},
+            {"name": "o0o0o", "role": "Flex", "nationality": "China", "age": 30, "photo": "/images/player-faces/o0o0o.png"}
+        ]
+    },
+    "wolves-esports": {
+        "id": "wolves-esports",
+        "name": "Wolves Esports",
+        "acronym": "WOL",
+        "region": "China",
+        "logo": "/static/images/logos/wolves-esports.png",
+        "players": [
+            {"name": "Juicy", "role": "Duelist", "nationality": "China", "age": 24, "photo": "/images/player-faces/juicy.png"},
+            {"name": "SiuFatBB", "role": "Initiator", "nationality": "Hong Kong", "age": 29, "photo": "/images/player-faces/siufatbb.png"},
+            {"name": "Lysoar", "role": "Sentinel", "nationality": "China", "age": 27, "photo": "/images/player-faces/lysoar.png"},
+            {"name": "Yuicaw", "role": "Controller", "nationality": "China", "age": 32, "photo": "/images/player-faces/yuicaw.png"},
+            {"name": "Spring", "role": "Flex", "nationality": "China", "age": 28, "photo": "/images/player-faces/spring.png"}
+        ]
+    }
+  }

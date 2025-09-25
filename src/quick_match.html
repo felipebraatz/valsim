@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Match - ValSim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { background-color: #09090B; color: #FAFAFA; }
+        .card-custom { background-color: #18181B; border: 1px solid #27272A; border-radius: 0.75rem; }
+        .font-headline { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+        select { background-color: #3f3f46; color: white; }
+        select option { background-color: white; color: black; }
+        .flex-container { display: flex; align-items: center; gap: 0.5rem; }
+        .logo { width: 20px; height: 20px; object-fit: contain; }
+        /* Adiciona um estilo para o estado de carregamento */
+        .loading-state { display: flex; justify-content: center; align-items: center; height: 100px; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-50">
+    <div class="flex flex-col items-center justify-center min-h-screen p-4">
+        <div class="w-full max-w-4xl mx-auto">
+            <a href="/" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 mb-4">
+                <i data-lucide="arrow-left" class="mr-2 h-4 w-4"></i>
+                Voltar ao Menu Principal
+            </a>
+
+            <div class="card-custom w-full shadow-lg">
+                <div class="p-6 text-center">
+                    <h2 class="text-3xl font-headline">Configurar Partida Rápida</h2>
+                </div>
+                <div class="p-6 space-y-8">
+                    <!-- Format and Maps -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+                        <div class="space-y-2">
+                            <label class="flex items-center gap-2 text-sm font-medium text-zinc-400"><i data-lucide="trophy" class="w-4 h-4"></i> Formato</label>
+                            <select id="format-select" class="flex h-10 w-full items-center justify-between rounded-md border border-input px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                                <option value="md1">Melhor de 1</option>
+                                <option value="md3" selected>Melhor de 3</option>
+                                <option value="md5">Melhor de 5</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="flex items-center gap-2 text-sm font-medium text-zinc-400"><i data-lucide="map" class="w-4 h-4"></i> Mapas</label>
+                            <div id="maps-container" class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                                <!-- Map selects will be generated here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Selection -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Team A -->
+                        <div class="space-y-4">
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 text-sm font-medium text-zinc-400"><i data-lucide="users" class="w-4 h-4"></i> Time A</label>
+                                <select id="team-a-select" class="flex h-10 w-full items-center justify-between rounded-md border border-input px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                                    <option>Carregando times...</option>
+                                </select>
+                            </div>
+                            <div id="team-a-display" class="card-custom bg-zinc-800/50 p-4 min-h-[150px]">
+                                <div class="loading-state">Carregando...</div>
+                            </div>
+                        </div>
+                        <!-- Team B -->
+                        <div class="space-y-4">
+                             <div class="space-y-2">
+                                <label class="flex items-center gap-2 text-sm font-medium text-zinc-400"><i data-lucide="users" class="w-4 h-4"></i> Time B</label>
+                                <select id="team-b-select" class="flex h-10 w-full items-center justify-between rounded-md border border-input px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                                     <option>Carregando times...</option>
+                                </select>
+                            </div>
+                            <div id="team-b-display" class="card-custom bg-zinc-800/50 p-4 min-h-[150px]">
+                               <div class="loading-state">Carregando...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button id="start-match-button" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-white text-black hover:bg-zinc-200 h-11 rounded-md px-8">
+                            Iniciar Partida
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        // --- GLOBAL STATE ---
+        let teams = {}; // Será preenchido pela API
+        const availableMaps = [
+            { name: 'ascent' }, { name: 'icebox' }, { name: 'breeze' }, { name: 'split' },
+            { name: 'pearl' }, { name: 'haven' }, { name: 'lotus' }, { name: 'bind' },
+            { name: 'fracture' }, { name: 'sunset' }, { name: 'abyss' },
+        ];
+        let selectedMaps = [];
+
+        // --- DOM ELEMENTS ---
+        const teamASelect = document.getElementById('team-a-select');
+        const teamBSelect = document.getElementById('team-b-select');
+        const teamADisplay = document.getElementById('team-a-display');
+        const teamBDisplay = document.getElementById('team-b-display');
+        const formatSelect = document.getElementById('format-select');
+        const mapsContainer = document.getElementById('maps-container');
+        const startMatchButton = document.getElementById('start-match-button');
+
+        // --- FUNCTIONS ---
+
+        function populateTeamSelects() {
+            const regions = { 'Americas': [], 'EMEA': [], 'Pacific': [], 'China': [] };
+            for (const teamId in teams) {
+                const team = teams[teamId];
+                if (regions[team.region]) {
+                    regions[team.region].push(team);
+                }
+            }
+
+            [teamASelect, teamBSelect].forEach(select => {
+                select.innerHTML = ''; // Limpa o "Carregando..."
+                for (const region in regions) {
+                    const optgroup = document.createElement('optgroup');
+                    optgroup.label = region;
+                    regions[region].forEach(team => {
+                        const option = document.createElement('option');
+                        option.value = team.id;
+                        option.textContent = team.name;
+                        optgroup.appendChild(option);
+                    });
+                    select.appendChild(optgroup);
+                }
+            });
+        }
+        
+        function updateTeamDisplay(teamId, displayElement) {
+            const team = teams[teamId];
+            if (!team) {
+                displayElement.innerHTML = '<div class="loading-state">Selecione um time</div>';
+                return;
+            }
+
+            // Os caminhos no JSON já são os corretos, não precisa mais do prefixo
+            const logoUrl = team.logo;
+
+            displayElement.innerHTML = `
+                <h3 class="flex items-center gap-2 font-bold">
+                    <img src="${logoUrl}" alt="${team.name} logo" class="logo">
+                    ${team.name}
+                </h3>
+                <ul class="mt-2 space-y-2 text-sm text-zinc-400">
+                    ${team.players.map(p => `<li>${p.name} (${p.role})</li>`).join('')}
+                </ul>
+            `;
+        }
+        
+        function handleTeamSelectionChange(e) {
+            const teamAId = teamASelect.value;
+            const teamBId = teamBSelect.value;
+
+            // Previne a seleção do mesmo time em ambos os selects
+            if (e.target === teamASelect && teamAId === teamBId) {
+                const previousValue = teamBSelect.getAttribute('data-previous-value');
+                teamBSelect.value = previousValue;
+            } else if (e.target === teamBSelect && teamBId === teamAId) {
+                 const previousValue = teamASelect.getAttribute('data-previous-value');
+                 teamASelect.value = previousValue;
+            }
+            
+            updateTeamDisplay(teamASelect.value, teamADisplay);
+            updateTeamDisplay(teamBSelect.value, teamBDisplay);
+
+            // Guarda o valor atual para a lógica de prevenção
+            teamASelect.setAttribute('data-previous-value', teamASelect.value);
+            teamBSelect.setAttribute('data-previous-value', teamBSelect.value);
+        }
+
+        function updateMapSelectors() {
+            const formatValue = formatSelect.value;
+            // Extrai o número do valor 'mdX'
+            const mapCount = parseInt(formatValue.replace('md', ''), 10);
+            mapsContainer.innerHTML = '';
+            
+            const newSelectedMaps = [];
+            const availableOptions = [...availableMaps]; // Cópia para não modificar o original
+
+            for (let i = 0; i < mapCount; i++) {
+                const select = document.createElement('select');
+                select.className = 'flex h-10 w-full items-center justify-between rounded-md border border-input px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50';
+                
+                // Opção padrão
+                const defaultOption = document.createElement('option');
+                defaultOption.textContent = 'Selecione um Mapa';
+                defaultOption.disabled = true;
+                select.appendChild(defaultOption);
+                
+                availableOptions.forEach(map => {
+                    const option = document.createElement('option');
+                    option.value = map.name;
+                    option.textContent = map.name.charAt(0).toUpperCase() + map.name.slice(1);
+                    select.appendChild(option);
+                });
+
+                // Tenta restaurar a seleção anterior ou define uma nova e única
+                let assignedMap = selectedMaps[i];
+                if (!assignedMap || newSelectedMaps.includes(assignedMap)) {
+                     // Encontra um mapa que ainda não foi selecionado
+                    const nextAvailableMap = availableMaps.find(m => !newSelectedMaps.includes(m.name));
+                    assignedMap = nextAvailableMap ? nextAvailableMap.name : availableMaps[i % availableMaps.length].name;
+                }
+                
+                select.value = assignedMap || 'default';
+                newSelectedMaps.push(assignedMap);
+
+                select.addEventListener('change', () => {
+                    selectedMaps = Array.from(mapsContainer.querySelectorAll('select')).map(s => s.value);
+                });
+
+                mapsContainer.appendChild(select);
+            }
+            selectedMaps = newSelectedMaps;
+        }
+        
+        function handleStartMatch() {
+            const teamAId = teamASelect.value;
+            const teamBId = teamBSelect.value;
+            const format = formatSelect.value;
+            
+            // Garante que todos os mapas foram selecionados
+            const finalSelectedMaps = Array.from(mapsContainer.querySelectorAll('select')).map(s => s.value);
+            if (finalSelectedMaps.some(m => !m || m === 'default')) {
+                alert('Por favor, selecione todos os mapas.');
+                return;
+            }
+
+            // Constrói a URL para a simulação
+            const params = new URLSearchParams({
+                teamA: teamAId,
+                teamB: teamBId,
+                format: format,
+                maps: JSON.stringify(finalSelectedMaps) // Envia os mapas como uma string JSON
+            });
+
+            // Redireciona para a página de simulação
+            window.location.href = `/match_simulation?${params.toString()}`;
+        }
+
+        // --- INITIALIZATION ---
+        
+        async function initializePage() {
+            try {
+                const response = await fetch('/api/teams');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                teams = await response.json();
+
+                // Agora que os dados foram carregados, inicialize o resto
+                populateTeamSelects();
+                
+                // Define valores iniciais para os times
+                const initialTeamA = 'sentinels';
+                const initialTeamB = 'g2-esports';
+                teamASelect.value = initialTeamA;
+                teamBSelect.value = initialTeamB;
+
+                // Guarda os valores iniciais
+                teamASelect.setAttribute('data-previous-value', initialTeamA);
+                teamBSelect.setAttribute('data-previous-value', initialTeamB);
+
+                // Atualiza os displays dos times e os seletores de mapa
+                updateTeamDisplay(initialTeamA, teamADisplay);
+                updateTeamDisplay(initialTeamB, teamBDisplay);
+                updateMapSelectors();
+
+                // Adiciona os event listeners depois que tudo está pronto
+                teamASelect.addEventListener('change', handleTeamSelectionChange);
+                teamBSelect.addEventListener('change', handleTeamSelectionChange);
+                formatSelect.addEventListener('change', updateMapSelectors);
+                startMatchButton.addEventListener('click', handleStartMatch);
+
+            } catch (error) {
+                console.error("Falha ao carregar os dados dos times:", error);
+                teamADisplay.innerHTML = '<div class="text-red-500">Erro ao carregar times.</div>';
+                teamBDisplay.innerHTML = '<div class="text-red-500">Erro ao carregar times.</div>';
+            }
+        }
+
+        // Inicia o processo de carregamento da página
+        document.addEventListener('DOMContentLoaded', initializePage);
+
+    </script>
+</body>
+</html>
