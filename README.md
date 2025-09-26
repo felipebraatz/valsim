@@ -22,21 +22,20 @@ Este é um aplicativo web construído com Python e Flask, projetado para simular
 
 O projeto é configurado para ser executado em um ambiente Nix, que gerencia as dependências e a configuração do servidor.
 
-1.  **Inicie o Workspace:** Ao abrir o projeto no ambiente de desenvolvimento, as dependências listadas em `requirements.txt` serão instaladas automaticamente em um ambiente virtual (`.venv`).
+1.  **Inicie o Workspace:** Ao abrir o projeto no ambiente de desenvolvimento, as dependências listadas em `requirements.txt` serão instaladas automaticamente em um ambiente virtual.
 
-2.  **Execute o Servidor:** O servidor de desenvolvimento Flask pode ser iniciado de duas maneiras:
-    - Automaticamente através da tarefa de preview `web`.
-    - Manualmente, executando o script no terminal:
-      ```bash
-      ./devserver.sh
-      ```
+2.  **Ative o Ambiente Virtual:** Para executar comandos `python` ou `pip` manualmente, lembre-se de ativar o ambiente virtual primeiro:
+    ```bash
+    source .venv/bin/activate
+    ```
 
-3.  **Acesse a Aplicação:** A aplicação estará disponível no painel de preview do seu IDE ou no endereço fornecido pelo servidor.
+3.  **Execute o Servidor:** Com o ambiente ativado, inicie o servidor de desenvolvimento Flask:
+    ```bash
+    flask run
+    ```
 
-Para executar comandos `python` ou `pip` manualmente, lembre-se de ativar o ambiente virtual primeiro:
-```bash
-source .venv/bin/activate
-```
+4.  **Acesse a Aplicação:** A aplicação estará disponível no painel de preview do seu IDE ou no endereço fornecido pelo servidor (geralmente `http://127.0.0.1:5000`).
+
 
 ## 📁 Estrutura do Projeto
 
@@ -44,7 +43,6 @@ source .venv/bin/activate
 .
 ├── main.py                   # Arquivo principal da aplicação Flask, define as rotas da API.
 ├── requirements.txt          # Lista de dependências Python.
-├── devserver.sh              # Script para iniciar o servidor de desenvolvimento.
 ├── data/
 │   ├── player_stats.json     # Dados base dos jogadores.
 │   └── teams.json            # Dados das equipes.
